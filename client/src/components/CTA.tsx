@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from 'lucide-react';
 import {  PrimaryButton } from './Buttons';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function CTA() {
     return (
@@ -31,9 +32,11 @@ export default function CTA() {
                             viewport={{ once: true }}
                             transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1, delay: 0.3 }}
                         >
-                            <PrimaryButton className="px-8 py-3 gap-2">
+                          <Link to="/generate">
+                            <PrimaryButton className="px-8 py-3 gap-2" >
                                 Start Creating Now <ArrowRightIcon size={20} />
                             </PrimaryButton>
+                          </Link>
                         </motion.div>
                     </div>
                 </div>

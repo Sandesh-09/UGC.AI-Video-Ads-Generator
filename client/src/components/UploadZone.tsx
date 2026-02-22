@@ -17,9 +17,10 @@ const UploadZone = ({label,file,onClear,onChange}:UploadZoneProps) => {
 
                </div>
 
-               <div className="absolute bottom-4 left-4 right-4 bg-black/50  backdrop-blur-md rounded-lg border border-white/10">
-                   <p className="text-sm font-medium truncate">{file.name}</p>
-                </div>
+               <div className="absolute bottom-3 left-3 right-3 bg-black/60 backdrop-blur-md rounded-xl border border-white/10 px-4 py-2">
+                   <p className="text-sm text-white font-medium line-clamp-2 break-words"> {file.name}
+                   </p>
+               </div>
                </>
            ) : (
                <>

@@ -14,9 +14,11 @@
   "description": "",
   "dependencies": {
     "@clerk/express": "^1.7.69",
+    "@google/genai": "^1.41.0",
     "@prisma/adapter-pg": "^7.3.0",
     "@prisma/client": "^7.3.0",
     "@sentry/node": "^10.38.0",
+    "axios": "^1.13.5",
     "cloudinary": "^2.9.0",
     "cors": "^2.8.6",
     "dotenv": "^17.2.4",

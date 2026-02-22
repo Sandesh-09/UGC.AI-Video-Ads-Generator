@@ -4,6 +4,7 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 import { ClerkProvider } from '@clerk/clerk-react'
 import { dark } from '@clerk/themes'
+import ScrollToTop from './components/ScrollToTop'
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')! as HTMLElement).render(
     }}
     publishableKey={PUBLISHABLE_KEY}>
         <BrowserRouter>
+        <ScrollToTop />
            <App />
         </BrowserRouter>
     </ClerkProvider>

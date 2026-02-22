@@ -15,9 +15,9 @@ datasource db {
 
 model User {
   id        String   @id
-  email     String
-  name      String
-  image     String
+  email     String   @unique                                /* 11*/
+  name      String?                                         /* 11*/
+  image     String?                                         /* 11*/
   credits   Int      @default(20)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
